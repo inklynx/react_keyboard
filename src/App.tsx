@@ -10,6 +10,9 @@ export class App extends React.Component<{}, State> {
   };
 
   handleKeyUp = (event: KeyboardEvent) => {
+    // eslint-disable-next-line no-console
+    console.log(event.key);
+
     this.setState({
       pressedKey: event.key,
     });
@@ -37,9 +40,3 @@ export class App extends React.Component<{}, State> {
     );
   }
 }
-
-// export const App: React.FC = () => (
-//   <div className="App">
-//     <p className="App__message">The last pressed key is [Enter]</p>
-//   </div>
-// );
